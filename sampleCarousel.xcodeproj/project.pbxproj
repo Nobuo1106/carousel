@@ -13,6 +13,8 @@
 		1827DF152AB6A4B300A1318F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1827DF132AB6A4B300A1318F /* Main.storyboard */; };
 		1827DF172AB6A4B800A1318F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1827DF162AB6A4B800A1318F /* Assets.xcassets */; };
 		1827DF1A2AB6A4B800A1318F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1827DF182AB6A4B800A1318F /* LaunchScreen.storyboard */; };
+		1827DF242AB6AA2700A1318F /* CarouselViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827DF222AB6AA2700A1318F /* CarouselViewCell.swift */; };
+		1827DF252AB6AA2700A1318F /* CarouselViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1827DF232AB6AA2700A1318F /* CarouselViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1827DF162AB6A4B800A1318F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1827DF192AB6A4B800A1318F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1827DF1B2AB6A4B800A1318F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1827DF222AB6AA2700A1318F /* CarouselViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewCell.swift; sourceTree = "<group>"; };
+		1827DF232AB6AA2700A1318F /* CarouselViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		1827DF0C2AB6A4B300A1318F /* sampleCarousel */ = {
 			isa = PBXGroup;
 			children = (
+				1827DF272AB6AA5700A1318F /* ViewController */,
+				1827DF212AB6A78200A1318F /* View */,
 				1827DF0D2AB6A4B300A1318F /* AppDelegate.swift */,
 				1827DF0F2AB6A4B300A1318F /* SceneDelegate.swift */,
-				1827DF112AB6A4B300A1318F /* ViewController.swift */,
-				1827DF132AB6A4B300A1318F /* Main.storyboard */,
 				1827DF162AB6A4B800A1318F /* Assets.xcassets */,
 				1827DF182AB6A4B800A1318F /* LaunchScreen.storyboard */,
 				1827DF1B2AB6A4B800A1318F /* Info.plist */,
 			);
 			path = sampleCarousel;
+			sourceTree = "<group>";
+		};
+		1827DF212AB6A78200A1318F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1827DF132AB6A4B300A1318F /* Main.storyboard */,
+				1827DF222AB6AA2700A1318F /* CarouselViewCell.swift */,
+				1827DF232AB6AA2700A1318F /* CarouselViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1827DF272AB6AA5700A1318F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1827DF112AB6A4B300A1318F /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +149,7 @@
 			files = (
 				1827DF1A2AB6A4B800A1318F /* LaunchScreen.storyboard in Resources */,
 				1827DF172AB6A4B800A1318F /* Assets.xcassets in Resources */,
+				1827DF252AB6AA2700A1318F /* CarouselViewCell.xib in Resources */,
 				1827DF152AB6A4B300A1318F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +163,7 @@
 			files = (
 				1827DF122AB6A4B300A1318F /* ViewController.swift in Sources */,
 				1827DF0E2AB6A4B300A1318F /* AppDelegate.swift in Sources */,
+				1827DF242AB6AA2700A1318F /* CarouselViewCell.swift in Sources */,
 				1827DF102AB6A4B300A1318F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
