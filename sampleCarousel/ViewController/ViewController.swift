@@ -23,8 +23,11 @@ class ViewController: UIViewController {
         
         let nib = UINib(nibName: String(describing: CarouselViewCell.self), bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: String(describing: CarouselViewCell.self))
-        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: collectionView.bounds.width / 2, height: collectionView.bounds.height / 2)
+        let layout = CustomCollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 60
+        layout.itemSize = CGSize(width: collectionView.bounds.width / 4, height: collectionView.bounds.height / 4)
+        collectionView.collectionViewLayout = layout
     }
 }
 
@@ -33,12 +36,12 @@ extension ViewController: UICollectionViewDelegate {
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        print()
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing:  CarouselViewCell.self), for: indexPath) as! CarouselViewCell
         return cell
+
     }
 }

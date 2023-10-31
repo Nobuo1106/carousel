@@ -15,6 +15,7 @@
 		1827DF1A2AB6A4B800A1318F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1827DF182AB6A4B800A1318F /* LaunchScreen.storyboard */; };
 		1827DF242AB6AA2700A1318F /* CarouselViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827DF222AB6AA2700A1318F /* CarouselViewCell.swift */; };
 		1827DF252AB6AA2700A1318F /* CarouselViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1827DF232AB6AA2700A1318F /* CarouselViewCell.xib */; };
+		1844B4442AED4A2C00FA7BDF /* CustomCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844B4432AED4A2B00FA7BDF /* CustomCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1827DF1B2AB6A4B800A1318F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1827DF222AB6AA2700A1318F /* CarouselViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewCell.swift; sourceTree = "<group>"; };
 		1827DF232AB6AA2700A1318F /* CarouselViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselViewCell.xib; sourceTree = "<group>"; };
+		1844B4432AED4A2B00FA7BDF /* CustomCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				1827DF132AB6A4B300A1318F /* Main.storyboard */,
 				1827DF222AB6AA2700A1318F /* CarouselViewCell.swift */,
 				1827DF232AB6AA2700A1318F /* CarouselViewCell.xib */,
+				1844B4432AED4A2B00FA7BDF /* CustomCollectionViewFlowLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				1827DF122AB6A4B300A1318F /* ViewController.swift in Sources */,
 				1827DF0E2AB6A4B300A1318F /* AppDelegate.swift in Sources */,
 				1827DF242AB6AA2700A1318F /* CarouselViewCell.swift in Sources */,
+				1844B4442AED4A2C00FA7BDF /* CustomCollectionViewFlowLayout.swift in Sources */,
 				1827DF102AB6A4B300A1318F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

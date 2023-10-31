@@ -17,9 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-vO-qmG">
-                                <rect key="frame" x="20" y="30" width="393" height="872"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-vO-qmG">
+                                <rect key="frame" x="0.0" y="229.66666666666663" width="393" height="393"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Byd-vO-qmG" secondAttribute="height" multiplier="1:1" id="gpT-pk-HPd"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sYN-pL-8HI">
                                     <size key="itemSize" width="330" height="240"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -36,10 +39,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Byd-vO-qmG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="TMz-6y-bF5"/>
-                            <constraint firstItem="Byd-vO-qmG" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="50" id="c9y-fB-ayZ"/>
-                            <constraint firstItem="Byd-vO-qmG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gH4-IA-eYI"/>
-                            <constraint firstItem="Byd-vO-qmG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="20" id="sRj-LV-X7g"/>
+                            <constraint firstItem="Byd-vO-qmG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Qsr-Ps-voC"/>
+                            <constraint firstItem="Byd-vO-qmG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e9G-Eo-bGa"/>
+                            <constraint firstItem="Byd-vO-qmG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zbY-y4-pgu"/>
                         </constraints>
                     </view>
                     <connections>
