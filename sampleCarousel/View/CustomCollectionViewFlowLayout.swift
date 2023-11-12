@@ -28,15 +28,14 @@ class CustomCollectionViewFlowLayout: UICollectionViewFlowLayout {
                 copiedAttributes.center = CGPoint(x: inset + copiedAttributes.size.width / 2, y: centerY)
                 previousMaxX = copiedAttributes.frame.maxX
             } else {
-                // 最初のセルのサイズは倍なので二個目のセルのminimumLineSpacingは半分
-                let spacing = copiedAttributes.indexPath.item == 1 ? minimumLineSpacing / 2 : minimumLineSpacing
-                    copiedAttributes.frame.origin.x = previousMaxX + spacing
+                // 最初のセルのサイズは倍なのでその差分を抜いたminimumSpacingを計算
+                let spacing = copiedAttributes.indexPath.item == 1 ? minimumLineSpacing - (UIScreen.main.bounds.width / 2.5 - UIScreen.main.bounds.width / 5.0) / 2: minimumLineSpacing
+                copiedAttributes.frame.origin.x = previousMaxX + spacing
                 previousMaxX = copiedAttributes.frame.maxX
             }
             if newLayoutAttributes.last != nil {
                 maxX = copiedAttributes.frame.maxX
             }
-            
             newLayoutAttributes.append(copiedAttributes)
         }
         return newLayoutAttributes

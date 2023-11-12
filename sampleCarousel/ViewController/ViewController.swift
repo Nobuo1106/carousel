@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         for cell in collectionView.visibleCells {
             guard let indexPath = collectionView.indexPath(for: cell) else { continue }
             let cellCenter = collectionView.layoutAttributesForItem(at: indexPath)!.center.x - offsetX
-            let distance = abs(collectionViewCenterX - cellCenter)
+            let distance = abs(collectionViewCenterX - cellCenter) // 左右両方必要なので絶対値
             let normalizedDistance = distance / collectionViewCenterX
             var scale = 0.0
             
@@ -65,6 +65,8 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing:  CarouselViewCell.self), for: indexPath) as! CarouselViewCell
+        let fontSize = indexPath.item == 0 ? 30 : 14
+        cell.label.font = UIFont.systemFont(ofSize: CGFloat(fontSize))
         return cell
     }
 }
@@ -72,9 +74,9 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.item == 0 {
-            return CGSize(width: collectionView.bounds.width / 2.5, height: collectionView.bounds.height / 2.5)
+            return CGSize(width: UIScreen.main.bounds.width / 2.5, height: collectionView.bounds.height / 2.5)
         } else {
-            return CGSize(width: collectionView.bounds.width / 5, height: collectionView.bounds.height / 5)
+            return CGSize(width: UIScreen.main.bounds.width / 5, height: collectionView.bounds.height / 5)
         }
     }
 }
